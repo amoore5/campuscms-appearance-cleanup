@@ -1,0 +1,9 @@
+<?php
+
+function campuscms_appearance_cleanup_init() {
+  global $user;
+
+  if (!in_array('administrator', $user->roles) && current_path() == 'admin/appearance') {
+    drupal_add_js(drupal_get_path('module', 'campuscms_appearnce_cleanup') . '/campuscms_appearance_cleanup.js');
+  }
+}

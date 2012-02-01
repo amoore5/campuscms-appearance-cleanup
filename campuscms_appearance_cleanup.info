@@ -1,0 +1,5 @@
+name = CampusCMS Appearance Cleanup
+description = Use jquery to hide themes that certain roles shouldn't see.
+package = "UC Merced"
+version = VERSION
+core = 7.x
